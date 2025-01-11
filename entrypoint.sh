@@ -6,5 +6,5 @@ elif [[ ! -e "$DEVICE_CONFIG" ]]; then
     echo "Missing DEVICE_CONFIG file: $DEVICE_CONFIG"
     sleep 10
 else
-    echo $DEVICE_CONFIG
+    esphome run $DEVICE_CONFIG
 fi
