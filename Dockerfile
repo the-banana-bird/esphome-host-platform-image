@@ -7,6 +7,7 @@ RUN pip3 install --no-cache-dir --upgrade --break-system-packages esphome
 
 # copy local files
 COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
 
 # final configuration
 EXPOSE 6052
