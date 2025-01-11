@@ -10,6 +10,6 @@ COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
 # final configuration
-EXPOSE 6052
+EXPOSE 6053
 VOLUME /config
 ENTRYPOINT ["sh", "-c", "./entrypoint.sh" ]
