@@ -1,7 +1,9 @@
 # esphome-host-platform-image
 Alpine docker image running a single host platform device in esphome. Mount your persistent config folder to the /config volume, then specify a file such as /config/host-platform.yaml with the DEVICE_CONFIG environment variable. The container will call `esphome run $DEVICE_CONFIG` automatically to start the host platform device.
 
-Example docker-compose script for an RS232-USB integration for an Optoma projector:
+To build the image locally, run `docker build -t esphome-host-platform .`
+
+Example docker-compose script:
 ```
 services:
   esphome:
